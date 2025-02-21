@@ -115,6 +115,10 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      # Install additional package.
+      - name: Install @likec4/language-server
+        run: npm install -g @likec4/language-server
+
       # Run tests
       - name: Run Tests
         run: ./gradlew check
@@ -250,8 +254,4 @@ jobs:
         run: |
           gh release create "v${{ needs.build.outputs.version }}" \
             --draft \
-            --title "v${{ needs.build.outputs.version }}" \
-            --notes "$(cat << 'EOM'
-          ${{ needs.build.outputs.changelog }}
-          EOM
-          )"
+            --title "v${{ needs.buil
