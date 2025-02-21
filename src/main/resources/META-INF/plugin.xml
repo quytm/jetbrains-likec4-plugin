@@ -1,18 +1,15 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.quytm.jetbrainslikec4plugin</id>
-    <name>jetbrains-likec4-plugin</name>
+    <id>com.github.quytm.likec4</id>
+    <name>LikeC4 LSP Support</name>
     <vendor>quytm</vendor>
+    <description>This is the plugin that support LikeC4 convention</description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.quytm.jetbrainslikec4plugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <platform.lsp.serverSupportProvider implementation="com.github.quytm.likec4.LikeC4LspServerSupportProvider"/>
+        <iconProvider implementation="com.github.quytm.likec4.LikeC4FileIconProvider"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.quytm.jetbrainslikec4plugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
