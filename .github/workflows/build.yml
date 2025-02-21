@@ -115,7 +115,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # Install additional package.
+      # Install additional package
       - name: Install @likec4/language-server
         run: npm install -g @likec4/language-server
 
@@ -203,6 +203,10 @@ jobs:
       # Setup Gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      # Install additional package
+      - name: Install @likec4/language-server
+        run: npm install -g @likec4/language-server
 
       # Cache Plugin Verifier IDEs
       - name: Setup Plugin Verifier IDEs Cache
