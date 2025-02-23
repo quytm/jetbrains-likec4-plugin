@@ -15,5 +15,5 @@ class LikeC4LspServerSupportProvider : LspServerSupportProvider {
   }
 
   override fun createLspServerWidgetItem(lspServer: LspServer, currentFile: VirtualFile?): LspServerWidgetItem? =
-    LspServerWidgetItem(lspServer, currentFile, icon = LikeC4Icons.LikeC4, settingsPageClass = null)
+    LspServerWidgetItem(lspServer, currentFile, LikeC4Icons.LikeC4, null)
 }

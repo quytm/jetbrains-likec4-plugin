@@ -49,7 +49,6 @@ dependencies {
         zipSigner()
         testFramework(TestFrameworkType.Platform)
     }
-    implementation("org.eclipse.lsp4j:org.eclipse.lsp4j:0.24.0")
 }
 
 // Configure IntelliJ Platform Gradle Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-extension.html
