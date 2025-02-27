@@ -119,6 +119,9 @@ jobs:
       - name: Install @likec4/language-server
         run: npm install -g @likec4/language-server
 
+      - name: Check if @likec4/language-server is installed
+        run: npm list -g --depth=0
+
       # Run tests
       - name: Run Tests
         run: ./gradlew check
