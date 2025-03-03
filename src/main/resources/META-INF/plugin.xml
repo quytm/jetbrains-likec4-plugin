@@ -12,4 +12,31 @@
         <iconProvider implementation="com.github.quytm.likec4.LikeC4FileIconProvider"/>
     </extensions>
 
+    <description>
+        <![CDATA[
+        Enhance your JetBrains IDE with LikeC4 support to work seamlessly with architecture-as-code models.<br><br>
+
+        This plugin integrates <a href="https://likec4.dev">LikeC4</a>, a powerful toolchain and Domain-Specific Language (DSL) for defining architecture diagrams as code, into JetBrains IDEs. It leverages the <a href="https://github.com/likec4/likec4/tree/main/packages/language-server">@likec4/language-server</a>, utilizing the <a href="https://plugins.jetbrains.com/docs/intellij/language-server-protocol.html">LSP API</a> to provide essential features like:
+
+        <ul>
+          <li>Syntax highlighting and code completion for LikeC4 DSL</li>
+          <li>Real-time validation and error checking</li>
+          <li>Navigation and symbol lookup within architecture models</li>
+          <li>Live diagram updates based on model changes</li>
+        </ul>
+
+        With this plugin, you can efficiently manage your architecture models directly within your JetBrains IDE, ensuring your diagrams remain up-to-date with your code.
+
+        <h3>🔗 Resources</h3>
+        <ul>
+          <li><strong>LikeC4 Website:</strong> <a href="https://likec4.dev">likec4.dev</a></li>
+          <li><strong>Plugin Source Code:</strong> <a href="https://github.com/quytm/jetbrains-likec4-plugin">GitHub Repository</a></li>
+          <li><strong>Issue Tracker:</strong> <a href="https://github.com/quytm/jetbrains-likec4-plugin/issues">Report a Bug / Request a Feature</a></li>
+        </ul>
+
+        <hr>
+        <p>Special thanks to <a href="https://github.com/davydkov">Denis Davydkov</a> for his invaluable help in developing this plugin.</p>
+        ]]>
+    </description>
+
 </idea-plugin>
