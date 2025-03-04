@@ -6,10 +6,15 @@
     <description>This is the plugin that support LikeC4 convention</description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.textmate</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <platform.lsp.serverSupportProvider implementation="com.github.quytm.likec4.LikeC4LspServerSupportProvider"/>
         <iconProvider implementation="com.github.quytm.likec4.LikeC4FileIconProvider"/>
+        <!--        <initProjectActivity implementation="com.github.quytm.likec4.LikeC4TextMateLoader"/>-->
+        <textmate.bundleProvider implementation="com.github.quytm.likec4.LikeC4TextMateBundleProvider"/>
+        <fileTypeFactory implementation="com.github.quytm.likec4.LikeC4FileTypeFactory"/>
+<!--        <applicationInitializedListener implementation="com.github.quytm.likec4.LikeC4TextMateLoader"/>-->
     </extensions>
 
     <description>
