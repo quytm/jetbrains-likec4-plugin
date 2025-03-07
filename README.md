@@ -1,4 +1,5 @@
-# Notice: this repository will be moved to [jetbrains-plugin](https://github.com/likec4/jetbrains-plugin) soon
+# Notice: this repository will be moved to [likec4/jetbrains-plugin](https://github.com/likec4/jetbrains-plugin) soon
+---
 # jetbrains-likec4-plugin
 
 ![Build](https://github.com/quytm/jetbrains-likec4-plugin/workflows/Build/badge.svg)
